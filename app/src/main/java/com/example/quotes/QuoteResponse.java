@@ -3,11 +3,24 @@ package com.example.quotes;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import java.util.List;
+
 // QuoteResponse class
 public class QuoteResponse {
 
+    // The skeleton for the QuoteResponse object
+    public QuoteResponse(){}
+
+    public QuoteResponse(String iconUrl, String id, String url, String value) {
+        super();
+        this.iconUrl = iconUrl;
+        this.id = id;
+        this.url = url;
+        this.value = value;
+    }
+
     // Details and methods for icon_url
-    @SerializedName("iceon_url")
+    @SerializedName("icon_url")
     @Expose
     private String iconUrl;
 
